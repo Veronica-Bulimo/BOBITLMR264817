@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.config['MYSQL_HOST'] = '127.0.0.1'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'Covid-19-TracingApp'
+app.config['MYSQL_DB'] = 'Covid-19-Contact-Tracing'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 # init MYSQL
 mysql = MySQL(app)
