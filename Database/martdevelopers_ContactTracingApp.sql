@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `martdevelopers_ContactTracingApp`
+-- Database: `Covid-19TracingApp`
 --
 
 -- --------------------------------------------------------
@@ -48,8 +48,8 @@ CREATE TABLE `questionaires` (
 --
 
 INSERT INTO `questionaires` (`id`, `name`, `age`, `phone`, `symptoms`, `symptops_started`, `closeness`, `other_medical_issues`, `family_members`, `any_recent_travel`, `same_symptoms`, `create_date`) VALUES
-(1, 'Mart Mbithi', '20', '+254 743 733706', 'Symptoms are chills, fever and sweating, usually occurring a few weeks after being bitten.\r\n', 'Three weeks ago that is 30th July 2020', 'No ', 'Yes, Symptoms are chills, fever and sweating, usually occurring a few weeks after being bitten.\r\n', '4', 'Yes, I travelled Home from town', 'No', '2020-08-05 11:04:00.008994'),
-(2, 'MartMbithi', '56', '+254723473411', 'Symptoms are chills, fever and sweating, usually occurring a few weeks after being bitten.\r\n', 'Three weeks ago that is 30th July 2020', 'Yes, On 1st August 2020', 'No', '4', 'Yes , From Nairobi to Machakos', 'Yes, My brother has fever and sweating,', '2020-08-05 11:12:06.411307');
+(1, 'JohnDoe', '20', '+254 743 733706', 'Symptoms are chills, fever and sweating, usually occurring a few weeks after being bitten.\r\n', 'Three weeks ago that is 30th July 2020', 'No ', 'Yes, Symptoms are chills, fever and sweating, usually occurring a few weeks after being bitten.\r\n', '4', 'Yes, I travelled Home from town', 'No', '2020-08-05 11:04:00.008994'),
+(2, 'JaneDoe', '56', '+254723473411', 'Symptoms are chills, fever and sweating, usually occurring a few weeks after being bitten.\r\n', 'Three weeks ago that is 30th July 2020', 'Yes, On 1st August 2020', 'No', '4', 'Yes , From Nairobi to Machakos', 'Yes, My brother has fever and sweating,', '2020-08-05 11:12:06.411307');
 
 -- --------------------------------------------------------
 
@@ -70,9 +70,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `password`) VALUES
-(1, 'Martin', 'martinezmbithi@gmail.com', 'mart', '$5$rounds=535000$0XqrU7X1Uim2Vd89$QhWdhd2iMrsAC2KcAG1sFTnGfvKBg4EEmmVFBzexOQ0'),
-(2, 'Mart Mbithi', 'martdevelopers254@gmail.com', 'Mart Mbithi', '$5$rounds=535000$mmJ5eKr9dDI/JKcw$In4JWdIXya8XzjhL4LoJKIrB2ttIvsWoY3IVPqKzZLB'),
-(3, 'mercy mumo', 'martdevelopers@ilib.org', 'Mercy', '$5$rounds=535000$0zZ2L5Ns6vXIhWie$KdldRxHyjup1BfqGv.hyk1GRULp4pzYIM5du11H7Yi3');
+(1, 'JohnDoe', 'johnDoe@gmail.com', 'John', '$5$rounds=535000$0XqrU7X1Uim2Vd89$QhWdhd2iMrsAC2KcAG1sFTnGfvKBg4EEmmVFBzexOQ0');
+
+
 
 --
 -- Indexes for dumped tables
