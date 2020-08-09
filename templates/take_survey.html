@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container">
+  <div class="card">
+      <div class="card-header">
+        <h1>COVID-19 CONTACT TRACING SURVEY</h1>
+        {% from "includes/_formhelpers.html" import render_field %}
+        <form method="POST" action="">
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              {{ render_field(form.name, class_="form-control") }}
+            </div>
+            <div class="form-group col-md-4">
+              {{ render_field(form.age, class_="form-control") }}
+            </div>
+            <div class="form-group col-md-4">
+              {{ render_field(form.phone, class_="form-control") }}
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              {{ render_field(form.symptoms, class_="form-control") }}
+            </div>
+            <div class="form-group col-md-6">
+              {{ render_field(form.symptops_started, class_="form-control" ) }}
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              {{ render_field(form.closeness, class_="form-control" ) }}
+            </div>
+            <div class="form-group col-md-6">
+              {{ render_field(form.other_medical_issues, class_="form-control") }}
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              {{ render_field(form.family_members, class_="form-control" ) }}
+            </div>
+            <div class="form-group col-md-6">
+              {{ render_field(form.same_symptoms, class_="form-control") }}
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              {{ render_field(form.any_recent_travel, class_="form-control" ) }}
+            </div>
+          </div>
+          
+          <p><input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+{% endblock %}

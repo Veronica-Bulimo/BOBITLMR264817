@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container">
+  <div class="card text-center">
+      <div class="card-header text-primary">
+        <h1>More About Contact Tracing Application</h1>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-success">What Is Contact Tracing?</h5>
+                <p class="card-text">
+                  In public health, contact tracing is the process of identification
+                  of persons who may have come into contact with an infected person ("contacts")
+                  and subsequent collection of further information about these contacts. 
+                  By tracing the contacts of infected individuals, testing them for infection,
+                  isolating or treating the infected and tracing their contacts in turn,
+                  public health aims to reduce infections in the population. 
+                  Diseases for which contact tracing is commonly performed for include tuberculosis, 
+                  vaccine-preventable infections like measles, sexually transmitted infections (including HIV), 
+                  blood-borne infections, ebola, some serious bacterial infections, and novel infections (e.g. SARS-CoV, H1N1, and COVID-19).
+                  Contact tracing has been a pillar of communicable disease control in public health for decades.
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title  text-success">Why Contact Tracing Is Important</h5>
+                  <p class="card-text">
+                    <ul class="list-group">
+                      <li class="list-group-item">To interrupt ongoing transmission and reduce the spread of an infection</li>
+                      <li class="list-group-item">To alert contacts to the possibility of infection and offer preventive services or prophylactic care</li>
+                      <li class="list-group-item">To help prevent reinfection of the originally infected patient</li>
+                      <li class="list-group-item">To offer diagnosis, counseling and treatment to already infected individuals</li>
+                    </ul>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-danger">
+          In cases of diseases of uncertain infectious potential, contact tracing is also sometimes performed to learn about disease characteristics, including infectiousness. Contact tracing is not always the most efficient method of addressing infectious disease.
+          In areas of high disease prevalence, screening or focused testing may be more cost-effective.
+        </p>
+      </div>
+    </div>
+</div>
+
+{% endblock %}

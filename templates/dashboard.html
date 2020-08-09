@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container">
+  <div class="card text-center">
+      <div class="card-header">
+        <h3>Hey!  Welcome {{session.username}} </h3>
+          <div class="card-body">
+            <a class="btn btn-success" href="/take_survey">Take A COVID-19 Contact Tracing Survey</a>
+              </a>
+          </div>
+      </div>
+  </div>  
+</div>   
+{% endblock %}
